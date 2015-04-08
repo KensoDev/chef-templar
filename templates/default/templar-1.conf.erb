@@ -1,0 +1,5 @@
+start on starting templar
+stop on stopping templar
+respawn
+
+exec templar -redis='<%= @redis %>' -listen='<%= @listen %>' -debug='<%= @debug %>' > <%= @log_location %>
